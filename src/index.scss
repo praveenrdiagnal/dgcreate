@@ -4317,6 +4317,10 @@ table {
   padding: 8rem;
 }
 
+.p-72 {
+  padding: 4.5rem;
+}
+
 .p-px {
   padding: 1px;
 }
@@ -4459,6 +4463,16 @@ table {
 .px-32 {
   padding-left: 8rem;
   padding-right: 8rem;
+}
+
+.py-72 {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.px-72 {
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
 }
 
 .py-px {
@@ -4693,6 +4707,22 @@ table {
 
 .pl-32 {
   padding-left: 8rem;
+}
+
+.pt-72 {
+  padding-top: 4.5rem;
+}
+
+.pr-72 {
+  padding-right: 4.5rem;
+}
+
+.pb-72 {
+  padding-bottom: 4.5rem;
+}
+
+.pl-72 {
+  padding-left: 4.5rem;
 }
 
 .pt-px {
@@ -6234,7 +6264,28 @@ table {
 }
 
 .search-icon {
-  background: url('/images/icon-search.png');
+  background-image: url('/images/icon-search.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: url('/images/icon-search-hover.png');
+  }
+}
+
+.search-input-icon {
+  background-image: url('/images/icon-search-bar.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 32px;
+  width: 32px;
+  top: 50%;
+  margin-top: -16px;
 }
 
 @media (min-width: 576px) {
@@ -10043,6 +10094,10 @@ table {
     padding: 8rem;
   }
 
+  .sm\:p-72 {
+    padding: 4.5rem;
+  }
+
   .sm\:p-px {
     padding: 1px;
   }
@@ -10185,6 +10240,16 @@ table {
   .sm\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .sm\:py-72 {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .sm\:px-72 {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 
   .sm\:py-px {
@@ -10419,6 +10484,22 @@ table {
 
   .sm\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .sm\:pt-72 {
+    padding-top: 4.5rem;
+  }
+
+  .sm\:pr-72 {
+    padding-right: 4.5rem;
+  }
+
+  .sm\:pb-72 {
+    padding-bottom: 4.5rem;
+  }
+
+  .sm\:pl-72 {
+    padding-left: 4.5rem;
   }
 
   .sm\:pt-px {
@@ -15731,6 +15812,10 @@ table {
     padding: 8rem;
   }
 
+  .md\:p-72 {
+    padding: 4.5rem;
+  }
+
   .md\:p-px {
     padding: 1px;
   }
@@ -15873,6 +15958,16 @@ table {
   .md\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .md\:py-72 {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .md\:px-72 {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 
   .md\:py-px {
@@ -16107,6 +16202,22 @@ table {
 
   .md\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .md\:pt-72 {
+    padding-top: 4.5rem;
+  }
+
+  .md\:pr-72 {
+    padding-right: 4.5rem;
+  }
+
+  .md\:pb-72 {
+    padding-bottom: 4.5rem;
+  }
+
+  .md\:pl-72 {
+    padding-left: 4.5rem;
   }
 
   .md\:pt-px {
@@ -21419,6 +21530,10 @@ table {
     padding: 8rem;
   }
 
+  .lg\:p-72 {
+    padding: 4.5rem;
+  }
+
   .lg\:p-px {
     padding: 1px;
   }
@@ -21561,6 +21676,16 @@ table {
   .lg\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .lg\:py-72 {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .lg\:px-72 {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 
   .lg\:py-px {
@@ -21795,6 +21920,22 @@ table {
 
   .lg\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .lg\:pt-72 {
+    padding-top: 4.5rem;
+  }
+
+  .lg\:pr-72 {
+    padding-right: 4.5rem;
+  }
+
+  .lg\:pb-72 {
+    padding-bottom: 4.5rem;
+  }
+
+  .lg\:pl-72 {
+    padding-left: 4.5rem;
   }
 
   .lg\:pt-px {
@@ -27107,6 +27248,10 @@ table {
     padding: 8rem;
   }
 
+  .xl\:p-72 {
+    padding: 4.5rem;
+  }
+
   .xl\:p-px {
     padding: 1px;
   }
@@ -27249,6 +27394,16 @@ table {
   .xl\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .xl\:py-72 {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .xl\:px-72 {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 
   .xl\:py-px {
@@ -27483,6 +27638,22 @@ table {
 
   .xl\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .xl\:pt-72 {
+    padding-top: 4.5rem;
+  }
+
+  .xl\:pr-72 {
+    padding-right: 4.5rem;
+  }
+
+  .xl\:pb-72 {
+    padding-bottom: 4.5rem;
+  }
+
+  .xl\:pl-72 {
+    padding-left: 4.5rem;
   }
 
   .xl\:pt-px {
