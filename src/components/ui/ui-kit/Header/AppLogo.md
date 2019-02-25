@@ -1,7 +1,7 @@
 AppLogo Default:
 
 ```js
-<div className="bg-black p-16 flex flex-row">
+<div className="bg-black p-6 flex flex-row">
   <AppLogo
     logoText="Diagnal"
   />
@@ -11,9 +11,9 @@ AppLogo Default:
 AppLogo Compact:
 
 ```js
-<div className="bg-black p-16 flex flex-row">
+<div className="bg-black p-6 flex flex-row">
   <AppLogo
-    logoText="D"
+    logoText="Diagnal"
     compact
   />
 </div>
