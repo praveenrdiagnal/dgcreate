@@ -8,8 +8,8 @@
     "react-scripts": "2.1.5"
   },
   "scripts": {
-    "build:css": "postcss src/styles/index.css -o src/index.css",
-    "watch:css": "postcss src/styles/index.css -o src/index.css -w",
+    "build:css": "postcss src/styles/index.scss -o src/index.scss",
+    "watch:css": "postcss src/styles/index.scss -o src/index.scss -w",
     "start": "npm run watch:css & react-scripts start",
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -26,6 +26,7 @@
   ],
   "devDependencies": {
     "autoprefixer": "^9.4.9",
+    "node-sass": "^4.11.0",
     "postcss-cli": "^6.1.2",
     "tailwindcss": "^0.7.4"
   }
