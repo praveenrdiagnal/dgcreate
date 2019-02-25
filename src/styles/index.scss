@@ -46,3 +46,18 @@
   top: 50%;
   margin-top: -16px;
 }
+
+.app-header {
+  .app-logo-wrap {}
+  .searchbar-wrap {
+    .searchbar-transition-container {
+      transition: all 0.3s ease-out;
+      &.searchbar-closed {
+        transform: translateY(-100%);
+      }
+      &.searchbar-opened {
+        transform: translateY(0%);
+      }
+    }
+  }
+}

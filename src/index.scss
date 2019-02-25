@@ -6288,6 +6288,28 @@ table {
   margin-top: -16px;
 }
 
+.app-header {
+  .app-logo-wrap {
+  }
+
+  .searchbar-wrap {
+    .searchbar-transition-container {
+      -webkit-transition: all .3s ease-out;
+      transition: all .3s ease-out;
+
+      &.searchbar-closed {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+      }
+
+      &.searchbar-opened {
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+      }
+    }
+  }
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;
