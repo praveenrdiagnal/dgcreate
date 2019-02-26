@@ -22,7 +22,7 @@ module.exports = {
     // },
     {
       name: 'Rails',
-      content: 'src/components/ui/ui-kit/Rails/Rail.md',
+      content: 'src/components/ui/ui-kit/Rails/Rails.md',
       components: 'src/components/ui/ui-kit/Rails/*.js'
     },
     // {

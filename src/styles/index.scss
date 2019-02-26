@@ -69,3 +69,18 @@
     background-size: cover;
   }
 }
+
+.poster-wrapper {
+  transition: all 0.3s ease-in-out;
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: #FFE300 0 0 3px 5px;
+    transform: scale3d(1.05, 1.05, 1);
+  }
+  .poster-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
