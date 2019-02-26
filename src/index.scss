@@ -3187,6 +3187,10 @@ table {
   line-height: 1.25;
 }
 
+.leading-1\.38 {
+  line-height: 1.38;
+}
+
 .leading-normal {
   line-height: 1.5;
 }
@@ -6024,6 +6028,10 @@ table {
   letter-spacing: .05em;
 }
 
+.tracking-2px {
+  letter-spacing: 2px;
+}
+
 .select-none {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -6343,32 +6351,58 @@ table {
 }
 
 .poster-wrapper {
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
-
-  &:hover,
-  &:focus,
-  &:active {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-
-    .poster-image {
-      box-shadow: #ffe300 0 0 3px 5px;
-    }
-  }
-
   .poster-image {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;
+    position: relative;
   }
 
   .poster-header {
     top: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+.assets-rail {
+  .rail-header {
+    .rail-title {
+    }
+  }
+
+  ul.assets-list {
+    overflow: visible;
+
+    li {
+      -webkit-transition: all .3s ease-out;
+      transition: all .3s ease-out;
+    }
+
+    &:hover {
+      li {
+        -webkit-transform: translateX(-2.5%);
+                transform: translateX(-2.5%);
+      }
+
+      li:hover {
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+        -webkit-transition-duration: .3/1.1;
+                transition-duration: .3/1.1;
+
+        .poster-image {
+          box-shadow: #ffe300 0 0 3px 5px;
+        }
+      }
+
+      li:hover ~ li {
+        -webkit-transform: translateX(2.5%);
+                transform: translateX(2.5%);
+      }
+    }
   }
 }
 
@@ -9054,6 +9088,10 @@ table {
 
   .sm\:leading-tight {
     line-height: 1.25;
+  }
+
+  .sm\:leading-1\.38 {
+    line-height: 1.38;
   }
 
   .sm\:leading-normal {
@@ -11875,6 +11913,10 @@ table {
 
   .sm\:tracking-wide {
     letter-spacing: .05em;
+  }
+
+  .sm\:tracking-2px {
+    letter-spacing: 2px;
   }
 
   .sm\:select-none {
@@ -14798,6 +14840,10 @@ table {
     line-height: 1.25;
   }
 
+  .md\:leading-1\.38 {
+    line-height: 1.38;
+  }
+
   .md\:leading-normal {
     line-height: 1.5;
   }
@@ -17617,6 +17663,10 @@ table {
 
   .md\:tracking-wide {
     letter-spacing: .05em;
+  }
+
+  .md\:tracking-2px {
+    letter-spacing: 2px;
   }
 
   .md\:select-none {
@@ -20540,6 +20590,10 @@ table {
     line-height: 1.25;
   }
 
+  .lg\:leading-1\.38 {
+    line-height: 1.38;
+  }
+
   .lg\:leading-normal {
     line-height: 1.5;
   }
@@ -23359,6 +23413,10 @@ table {
 
   .lg\:tracking-wide {
     letter-spacing: .05em;
+  }
+
+  .lg\:tracking-2px {
+    letter-spacing: 2px;
   }
 
   .lg\:select-none {
@@ -26282,6 +26340,10 @@ table {
     line-height: 1.25;
   }
 
+  .xl\:leading-1\.38 {
+    line-height: 1.38;
+  }
+
   .xl\:leading-normal {
     line-height: 1.5;
   }
@@ -29101,6 +29163,10 @@ table {
 
   .xl\:tracking-wide {
     letter-spacing: .05em;
+  }
+
+  .xl\:tracking-2px {
+    letter-spacing: 2px;
   }
 
   .xl\:select-none {

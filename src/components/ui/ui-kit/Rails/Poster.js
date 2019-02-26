@@ -10,7 +10,7 @@ class Poster extends Component {
         <div className="poster-image w-full h-198 flex-none" style={{ backgroundImage: `url('${imageUrl}')`}} />
 
         <header className="poster-header h-48">
-          <h1 className="poster-title text-26 text-white leading-1.15 text-left">Poster Title</h1>
+          <h1 className="poster-title text-26 text-white leading-1.15 text-left">{title}</h1>
         </header>
       </article>
     )

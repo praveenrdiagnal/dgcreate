@@ -312,6 +312,7 @@ module.exports = {
     'none': 1,
     '1.15': 1.15,
     'tight': 1.25,
+    '1.38' : 1.38,
     'normal': 1.5,
     'loose': 2,
   },
@@ -334,6 +335,7 @@ module.exports = {
     'tight': '-0.05em',
     'normal': '0',
     'wide': '0.05em',
+    '2px' : '2px'
   },
 
 

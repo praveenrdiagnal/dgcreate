@@ -71,24 +71,44 @@
 }
 
 .poster-wrapper {
-  transition: all 0.3s ease-out;
-  &:hover,
-  &:focus,
-  &:active {
-    transform: scale(1.05);
-    .poster-image {
-      box-shadow: #FFE300 0 0 3px 5px;
-    } 
-  }
   .poster-image {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     transition: all 0.3s ease-out;
+    position: relative;
   }
   .poster-header {
     top: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+.assets-rail {
+  .rail-header {
+    .rail-title {}
+  }
+  ul.assets-list {
+    overflow: visible;
+    li {
+      transition: all 0.3s ease-out;
+    }
+    &:hover {
+      li {
+        transform: translateX(-2.5%);
+      }
+      li:hover {
+        transform: scale(1.05);
+        transition-duration: 0.3/1.1;
+        .poster-image {
+          box-shadow: #ffe300 0 0 3px 5px;
+        }
+      }
+    
+      li:hover ~ li {
+        transform: translateX(2.5%);
+      }
+    }
   }
 }
