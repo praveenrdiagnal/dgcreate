@@ -10,6 +10,11 @@ module.exports = {
       content: 'src/components/ui/ui-kit/Header/Header.md',
       components: 'src/components/ui/ui-kit/Header/*.js'
     },
+    {
+      name: 'HeroSection',
+      content: 'src/components/ui/ui-kit/HeroSection/HeroSection.md',
+      components: 'src/components/ui/ui-kit/HeroSection/*.js'
+    },
     // {
       // name: 'Footer',
       // content: 'src/components/ui/ui-kit/Footer/Footer.md',

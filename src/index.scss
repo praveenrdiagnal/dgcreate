@@ -3147,6 +3147,10 @@ table {
   height: 4.5rem;
 }
 
+.h-480 {
+  height: 30rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -6310,6 +6314,14 @@ table {
   }
 }
 
+.hero-image-wrapper {
+  .hero-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;
@@ -8952,6 +8964,10 @@ table {
 
   .sm\:h-72 {
     height: 4.5rem;
+  }
+
+  .sm\:h-480 {
+    height: 30rem;
   }
 
   .sm\:h-auto {
@@ -14672,6 +14688,10 @@ table {
     height: 4.5rem;
   }
 
+  .md\:h-480 {
+    height: 30rem;
+  }
+
   .md\:h-auto {
     height: auto;
   }
@@ -20390,6 +20410,10 @@ table {
     height: 4.5rem;
   }
 
+  .lg\:h-480 {
+    height: 30rem;
+  }
+
   .lg\:h-auto {
     height: auto;
   }
@@ -26106,6 +26130,10 @@ table {
 
   .xl\:h-72 {
     height: 4.5rem;
+  }
+
+  .xl\:h-480 {
+    height: 30rem;
   }
 
   .xl\:h-auto {

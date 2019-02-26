@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import AppLogo from './AppLogo';
-import SearchBar from './SearchBar';
 import SearchIcon from './SearchIcon';
 
 class AppHeader extends Component {
@@ -12,12 +11,6 @@ class AppHeader extends Component {
     this.state = {
       searchbarOpen: false
     }
-  }
-
-  handleSearchBarToggle = () => {
-    this.setState({
-      searchbarOpen: !this.state.searchbarOpen
-    })
   }
 
   render () {
@@ -30,7 +23,7 @@ class AppHeader extends Component {
         <div className="searchbar-wrap flex-1" />
 
         <div className="searchbar-toggle-wrap flex-none">
-          <button className="searchbar-toggle-button outline-none focus:outline-none p-2" onClick={() => this.handleSearchBarToggle()}>
+          <button className="searchbar-toggle-button outline-none focus:outline-none p-2">
             <SearchIcon />
           </button>
         </div>
