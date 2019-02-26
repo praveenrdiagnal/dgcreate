@@ -71,16 +71,24 @@
 }
 
 .poster-wrapper {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-out;
   &:hover,
   &:focus,
   &:active {
-    box-shadow: #FFE300 0 0 3px 5px;
-    transform: scale3d(1.05, 1.05, 1);
+    transform: scale(1.05);
+    .poster-image {
+      box-shadow: #FFE300 0 0 3px 5px;
+    } 
   }
   .poster-image {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    transition: all 0.3s ease-out;
+  }
+  .poster-header {
+    top: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }

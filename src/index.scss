@@ -3151,6 +3151,10 @@ table {
   height: 12.38rem;
 }
 
+.h-246 {
+  height: 15.38rem;
+}
+
 .h-480 {
   height: 30rem;
 }
@@ -3173,6 +3177,10 @@ table {
 
 .leading-none {
   line-height: 1;
+}
+
+.leading-1\.15 {
+  line-height: 1.15;
 }
 
 .leading-tight {
@@ -5826,6 +5834,10 @@ table {
   color: #ffebef;
 }
 
+.text-26 {
+  font-size: 1.625rem;
+}
+
 .text-xs {
   font-size: .75rem;
 }
@@ -6331,21 +6343,32 @@ table {
 }
 
 .poster-wrapper {
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 
   &:hover,
   &:focus,
   &:active {
-    box-shadow: #ffe300 0 0 3px 5px;
-    -webkit-transform: scale3d(1.05, 1.05, 1);
-            transform: scale3d(1.05, 1.05, 1);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+
+    .poster-image {
+      box-shadow: #ffe300 0 0 3px 5px;
+    }
   }
 
   .poster-image {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+  }
+
+  .poster-header {
+    top: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -8997,6 +9020,10 @@ table {
     height: 12.38rem;
   }
 
+  .sm\:h-246 {
+    height: 15.38rem;
+  }
+
   .sm\:h-480 {
     height: 30rem;
   }
@@ -9019,6 +9046,10 @@ table {
 
   .sm\:leading-none {
     line-height: 1;
+  }
+
+  .sm\:leading-1\.15 {
+    line-height: 1.15;
   }
 
   .sm\:leading-tight {
@@ -11654,6 +11685,10 @@ table {
 
   .sm\:focus\:text-pink-lightest:focus {
     color: #ffebef;
+  }
+
+  .sm\:text-26 {
+    font-size: 1.625rem;
   }
 
   .sm\:text-xs {
@@ -14727,6 +14762,10 @@ table {
     height: 12.38rem;
   }
 
+  .md\:h-246 {
+    height: 15.38rem;
+  }
+
   .md\:h-480 {
     height: 30rem;
   }
@@ -14749,6 +14788,10 @@ table {
 
   .md\:leading-none {
     line-height: 1;
+  }
+
+  .md\:leading-1\.15 {
+    line-height: 1.15;
   }
 
   .md\:leading-tight {
@@ -17384,6 +17427,10 @@ table {
 
   .md\:focus\:text-pink-lightest:focus {
     color: #ffebef;
+  }
+
+  .md\:text-26 {
+    font-size: 1.625rem;
   }
 
   .md\:text-xs {
@@ -20457,6 +20504,10 @@ table {
     height: 12.38rem;
   }
 
+  .lg\:h-246 {
+    height: 15.38rem;
+  }
+
   .lg\:h-480 {
     height: 30rem;
   }
@@ -20479,6 +20530,10 @@ table {
 
   .lg\:leading-none {
     line-height: 1;
+  }
+
+  .lg\:leading-1\.15 {
+    line-height: 1.15;
   }
 
   .lg\:leading-tight {
@@ -23114,6 +23169,10 @@ table {
 
   .lg\:focus\:text-pink-lightest:focus {
     color: #ffebef;
+  }
+
+  .lg\:text-26 {
+    font-size: 1.625rem;
   }
 
   .lg\:text-xs {
@@ -26187,6 +26246,10 @@ table {
     height: 12.38rem;
   }
 
+  .xl\:h-246 {
+    height: 15.38rem;
+  }
+
   .xl\:h-480 {
     height: 30rem;
   }
@@ -26209,6 +26272,10 @@ table {
 
   .xl\:leading-none {
     line-height: 1;
+  }
+
+  .xl\:leading-1\.15 {
+    line-height: 1.15;
   }
 
   .xl\:leading-tight {
@@ -28844,6 +28911,10 @@ table {
 
   .xl\:focus\:text-pink-lightest:focus {
     color: #ffebef;
+  }
+
+  .xl\:text-26 {
+    font-size: 1.625rem;
   }
 
   .xl\:text-xs {

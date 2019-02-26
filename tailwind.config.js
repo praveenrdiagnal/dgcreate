@@ -260,6 +260,7 @@ module.exports = {
     'lg': '1.125rem',   // 18px
     'xl': '1.25rem',    // 20px
     '2xl': '1.5rem',    // 24px
+    '26' : '1.625rem',  // 26px
     '3xl': '1.875rem',  // 30px
     '4xl': '2.25rem',   // 36px
     '5xl': '3rem',      // 48px
@@ -309,6 +310,7 @@ module.exports = {
 
   leading: {
     'none': 1,
+    '1.15': 1.15,
     'tight': 1.25,
     'normal': 1.5,
     'loose': 2,
@@ -553,6 +555,7 @@ module.exports = {
     '64': '16rem',
     '72' : '4.5rem',
     '198' : '12.38rem',
+    '246' : '15.38rem',
     '480' :'30rem',
     'full': '100%',
     'screen': '100vh',
