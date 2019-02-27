@@ -30,11 +30,11 @@ module.exports = {
       content: 'src/components/ui/ui-kit/Grid/Grid.md',
       components: 'src/components/ui/ui-kit/Grid/*.js'
     },
-    // {
-    //   name: 'NavigationDrawer',
-    //   content: 'src/components/ui/ui-kit/NavigationDrawer/NavigationDrawer.md',
-    //   components: 'src/components/ui/ui-kit/NavigationDrawer/*.js'
-    // },
+    {
+      name: 'NavDrawer',
+      content: 'src/components/ui/ui-kit/NavDrawer/NavDrawer.md',
+      components: 'src/components/ui/ui-kit/NavDrawer/*.js'
+    },
     // {
       // name: 'Details',
       // content: 'src/components/ui/ui-kit/Details/Details.md',

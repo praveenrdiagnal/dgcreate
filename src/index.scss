@@ -4329,6 +4329,10 @@ table {
   padding: 4rem;
 }
 
+.p-18 {
+  padding: 1.125rem;
+}
+
 .p-20 {
   padding: 5rem;
 }
@@ -4339,6 +4343,10 @@ table {
 
 .p-32 {
   padding: 8rem;
+}
+
+.p-60 {
+  padding: 3.75rem;
 }
 
 .p-72 {
@@ -4459,6 +4467,16 @@ table {
   padding-right: 4rem;
 }
 
+.py-18 {
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+}
+
+.px-18 {
+  padding-left: 1.125rem;
+  padding-right: 1.125rem;
+}
+
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -4487,6 +4505,16 @@ table {
 .px-32 {
   padding-left: 8rem;
   padding-right: 8rem;
+}
+
+.py-60 {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
+.px-60 {
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
 }
 
 .py-72 {
@@ -4685,6 +4713,22 @@ table {
   padding-left: 4rem;
 }
 
+.pt-18 {
+  padding-top: 1.125rem;
+}
+
+.pr-18 {
+  padding-right: 1.125rem;
+}
+
+.pb-18 {
+  padding-bottom: 1.125rem;
+}
+
+.pl-18 {
+  padding-left: 1.125rem;
+}
+
 .pt-20 {
   padding-top: 5rem;
 }
@@ -4731,6 +4775,22 @@ table {
 
 .pl-32 {
   padding-left: 8rem;
+}
+
+.pt-60 {
+  padding-top: 3.75rem;
+}
+
+.pr-60 {
+  padding-right: 3.75rem;
+}
+
+.pb-60 {
+  padding-bottom: 3.75rem;
+}
+
+.pl-60 {
+  padding-left: 3.75rem;
 }
 
 .pt-72 {
@@ -6456,6 +6516,11 @@ table {
       padding-bottom: 10px;
     }
   }
+}
+
+.navdrawer-link {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
 @media (min-width: 576px) {
@@ -10276,6 +10341,10 @@ table {
     padding: 4rem;
   }
 
+  .sm\:p-18 {
+    padding: 1.125rem;
+  }
+
   .sm\:p-20 {
     padding: 5rem;
   }
@@ -10286,6 +10355,10 @@ table {
 
   .sm\:p-32 {
     padding: 8rem;
+  }
+
+  .sm\:p-60 {
+    padding: 3.75rem;
   }
 
   .sm\:p-72 {
@@ -10406,6 +10479,16 @@ table {
     padding-right: 4rem;
   }
 
+  .sm\:py-18 {
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+  }
+
+  .sm\:px-18 {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+  }
+
   .sm\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -10434,6 +10517,16 @@ table {
   .sm\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .sm\:py-60 {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .sm\:px-60 {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
   }
 
   .sm\:py-72 {
@@ -10632,6 +10725,22 @@ table {
     padding-left: 4rem;
   }
 
+  .sm\:pt-18 {
+    padding-top: 1.125rem;
+  }
+
+  .sm\:pr-18 {
+    padding-right: 1.125rem;
+  }
+
+  .sm\:pb-18 {
+    padding-bottom: 1.125rem;
+  }
+
+  .sm\:pl-18 {
+    padding-left: 1.125rem;
+  }
+
   .sm\:pt-20 {
     padding-top: 5rem;
   }
@@ -10678,6 +10787,22 @@ table {
 
   .sm\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .sm\:pt-60 {
+    padding-top: 3.75rem;
+  }
+
+  .sm\:pr-60 {
+    padding-right: 3.75rem;
+  }
+
+  .sm\:pb-60 {
+    padding-bottom: 3.75rem;
+  }
+
+  .sm\:pl-60 {
+    padding-left: 3.75rem;
   }
 
   .sm\:pt-72 {
@@ -16030,6 +16155,10 @@ table {
     padding: 4rem;
   }
 
+  .md\:p-18 {
+    padding: 1.125rem;
+  }
+
   .md\:p-20 {
     padding: 5rem;
   }
@@ -16040,6 +16169,10 @@ table {
 
   .md\:p-32 {
     padding: 8rem;
+  }
+
+  .md\:p-60 {
+    padding: 3.75rem;
   }
 
   .md\:p-72 {
@@ -16160,6 +16293,16 @@ table {
     padding-right: 4rem;
   }
 
+  .md\:py-18 {
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+  }
+
+  .md\:px-18 {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+  }
+
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -16188,6 +16331,16 @@ table {
   .md\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .md\:py-60 {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .md\:px-60 {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
   }
 
   .md\:py-72 {
@@ -16386,6 +16539,22 @@ table {
     padding-left: 4rem;
   }
 
+  .md\:pt-18 {
+    padding-top: 1.125rem;
+  }
+
+  .md\:pr-18 {
+    padding-right: 1.125rem;
+  }
+
+  .md\:pb-18 {
+    padding-bottom: 1.125rem;
+  }
+
+  .md\:pl-18 {
+    padding-left: 1.125rem;
+  }
+
   .md\:pt-20 {
     padding-top: 5rem;
   }
@@ -16432,6 +16601,22 @@ table {
 
   .md\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .md\:pt-60 {
+    padding-top: 3.75rem;
+  }
+
+  .md\:pr-60 {
+    padding-right: 3.75rem;
+  }
+
+  .md\:pb-60 {
+    padding-bottom: 3.75rem;
+  }
+
+  .md\:pl-60 {
+    padding-left: 3.75rem;
   }
 
   .md\:pt-72 {
@@ -21784,6 +21969,10 @@ table {
     padding: 4rem;
   }
 
+  .lg\:p-18 {
+    padding: 1.125rem;
+  }
+
   .lg\:p-20 {
     padding: 5rem;
   }
@@ -21794,6 +21983,10 @@ table {
 
   .lg\:p-32 {
     padding: 8rem;
+  }
+
+  .lg\:p-60 {
+    padding: 3.75rem;
   }
 
   .lg\:p-72 {
@@ -21914,6 +22107,16 @@ table {
     padding-right: 4rem;
   }
 
+  .lg\:py-18 {
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+  }
+
+  .lg\:px-18 {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+  }
+
   .lg\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -21942,6 +22145,16 @@ table {
   .lg\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .lg\:py-60 {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .lg\:px-60 {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
   }
 
   .lg\:py-72 {
@@ -22140,6 +22353,22 @@ table {
     padding-left: 4rem;
   }
 
+  .lg\:pt-18 {
+    padding-top: 1.125rem;
+  }
+
+  .lg\:pr-18 {
+    padding-right: 1.125rem;
+  }
+
+  .lg\:pb-18 {
+    padding-bottom: 1.125rem;
+  }
+
+  .lg\:pl-18 {
+    padding-left: 1.125rem;
+  }
+
   .lg\:pt-20 {
     padding-top: 5rem;
   }
@@ -22186,6 +22415,22 @@ table {
 
   .lg\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .lg\:pt-60 {
+    padding-top: 3.75rem;
+  }
+
+  .lg\:pr-60 {
+    padding-right: 3.75rem;
+  }
+
+  .lg\:pb-60 {
+    padding-bottom: 3.75rem;
+  }
+
+  .lg\:pl-60 {
+    padding-left: 3.75rem;
   }
 
   .lg\:pt-72 {
@@ -27538,6 +27783,10 @@ table {
     padding: 4rem;
   }
 
+  .xl\:p-18 {
+    padding: 1.125rem;
+  }
+
   .xl\:p-20 {
     padding: 5rem;
   }
@@ -27548,6 +27797,10 @@ table {
 
   .xl\:p-32 {
     padding: 8rem;
+  }
+
+  .xl\:p-60 {
+    padding: 3.75rem;
   }
 
   .xl\:p-72 {
@@ -27668,6 +27921,16 @@ table {
     padding-right: 4rem;
   }
 
+  .xl\:py-18 {
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+  }
+
+  .xl\:px-18 {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+  }
+
   .xl\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -27696,6 +27959,16 @@ table {
   .xl\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .xl\:py-60 {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .xl\:px-60 {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
   }
 
   .xl\:py-72 {
@@ -27894,6 +28167,22 @@ table {
     padding-left: 4rem;
   }
 
+  .xl\:pt-18 {
+    padding-top: 1.125rem;
+  }
+
+  .xl\:pr-18 {
+    padding-right: 1.125rem;
+  }
+
+  .xl\:pb-18 {
+    padding-bottom: 1.125rem;
+  }
+
+  .xl\:pl-18 {
+    padding-left: 1.125rem;
+  }
+
   .xl\:pt-20 {
     padding-top: 5rem;
   }
@@ -27940,6 +28229,22 @@ table {
 
   .xl\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .xl\:pt-60 {
+    padding-top: 3.75rem;
+  }
+
+  .xl\:pr-60 {
+    padding-right: 3.75rem;
+  }
+
+  .xl\:pb-60 {
+    padding-bottom: 3.75rem;
+  }
+
+  .xl\:pl-60 {
+    padding-left: 3.75rem;
   }
 
   .xl\:pt-72 {
