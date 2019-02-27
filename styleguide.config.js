@@ -25,15 +25,15 @@ module.exports = {
       content: 'src/components/ui/ui-kit/Rails/Rails.md',
       components: 'src/components/ui/ui-kit/Rails/*.js'
     },
+    {
+      name: 'Grid',
+      content: 'src/components/ui/ui-kit/Grid/Grid.md',
+      components: 'src/components/ui/ui-kit/Grid/*.js'
+    },
     // {
-      // name: 'Grid',
-      // content: 'src/components/ui/ui-kit/Grid/Grid.md',
-      // components: 'src/components/ui/ui-kit/Grid/*.js'
-    // },
-    // {
-      // name: 'NavigationDrawer',
-      // content: 'src/components/ui/ui-kit/NavigationDrawer/NavigationDrawer.md',
-      // components: 'src/components/ui/ui-kit/NavigationDrawer/*.js'
+    //   name: 'NavigationDrawer',
+    //   content: 'src/components/ui/ui-kit/NavigationDrawer/NavigationDrawer.md',
+    //   components: 'src/components/ui/ui-kit/NavigationDrawer/*.js'
     // },
     // {
       // name: 'Details',
