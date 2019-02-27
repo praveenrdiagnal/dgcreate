@@ -10,8 +10,8 @@
   "scripts": {
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "build:css": "postcss-scss src/styles/index.scss -o src/index.scss",
-    "watch:css": "postcss-scss src/styles/index.scss -o src/index.scss -w",
+    "build:css": "postcss src/styles/index.scss -o src/index.scss",
+    "watch:css": "postcss src/styles/index.scss -o src/index.scss -w",
     "start": "npm run watch:css & react-scripts start",
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
