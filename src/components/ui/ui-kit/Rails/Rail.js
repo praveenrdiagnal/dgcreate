@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Poster from './Poster';
+import FocusablePoster from './Poster';
 
 const movies = [
   {
@@ -40,20 +40,22 @@ class Rail extends Component {
     return movies.map((movie, i) => {
       return(
         <li key={movie.id} className="float-left mr-6">
-          <Poster
+          <FocusablePoster
             imageUrl="https://placeimg.com/1000/700/people"
             title={movie.title}
             style={{ zIndex: 10 * (i + 1)}}
+            focusPath={`assetitem-${movie.id}`}
+            onEnterPress={() => console.log('Pressed enter on ' + movie.title + '!')}
           />
         </li>
       )
     })
   }
 
-  renderAssets = children => {
+  renderAssets = movies => {
     return (
-      <ul className="assets-list list-reset flex flex-no-wrap overflow-hidden">
-        {this.renderPosters(children)}
+      <ul className="assets-list list-reset flex flex-no-wrap overflow-y-hidden overflow-x-auto">
+        {this.renderPosters(movies)}
       </ul>
     )
   }
@@ -67,7 +69,7 @@ class Rail extends Component {
   }
 
   render () {
-    const { title } = this.props;
+    const { title, movies } = this.props;
 
     return (
       <section className="assets-rail w-full">

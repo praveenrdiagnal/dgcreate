@@ -1,9 +1,22 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Focusable, VerticalList } from 'react-key-navigation';
 
 import SideNavLink from './SideNavLink';
 
 class SideNav extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      active: false
+    }
+  }
+
+  setActive(status) {
+    this.setState({active: status});
+  }
+
   renderLinks = links => {
     return links.map(link => {
       return <SideNavLink key={link.id} title={link.title} url={link.url} onClick={() => console.log(link.url)} />
@@ -13,7 +26,14 @@ class SideNav extends Component {
   renderSideNavLinkList = links => {
     return (
       <ul className="navdrawer-linklist list-reset flex flex-col flex-no-wrap">
-        {this.renderLinks(links)}
+        <VerticalList
+          onFocus={() => this.setActive(true)}
+          onBlur={() => this.setActive(false)}
+          focusId="side-navigation"
+          retainLastFocus={true}
+        >
+          {this.renderLinks(links)}
+        </VerticalList>
       </ul>
     )
   }
@@ -30,7 +50,7 @@ class SideNav extends Component {
     const { withHeader, links } = this.props;
 
     return (
-      <section className="nav-drawer flex flex-col flex-no-wrap h-full w-440 bg-dg-navdrawer-bg pb-16">
+      <section id="side-navigation" class={`nav-drawer flex flex-col flex-no-wrap h-full w-440 bg-dg-navdrawer-bg pb-16 ${this.state.active ? 'focused' : ''}`}>
         {withHeader ? this.renderHeader() : null}
 
         {links ? this.renderSideNavLinkList(links) : null}

@@ -4369,6 +4369,10 @@ table {
   padding: 8rem;
 }
 
+.p-48 {
+  padding: 3rem;
+}
+
 .p-60 {
   padding: 3.75rem;
 }
@@ -4533,6 +4537,16 @@ table {
 .px-32 {
   padding-left: 8rem;
   padding-right: 8rem;
+}
+
+.py-48 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.px-48 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .py-60 {
@@ -4813,6 +4827,22 @@ table {
 
 .pl-32 {
   padding-left: 8rem;
+}
+
+.pt-48 {
+  padding-top: 3rem;
+}
+
+.pr-48 {
+  padding-right: 3rem;
+}
+
+.pb-48 {
+  padding-bottom: 3rem;
+}
+
+.pl-48 {
+  padding-left: 3rem;
 }
 
 .pt-60 {
@@ -6591,6 +6621,234 @@ table {
 .navdrawer-link {
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #444;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+:focus {
+  outline: 0;
+}
+
+#container {
+  height: 100%;
+}
+
+#sidebar {
+  position: absolute;
+  left: -370px;
+  top: 0;
+  width: 370px;
+  height: 100%;
+  box-shadow: 2px 0 20px 0 black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  -webkit-transition: left .5s, background-color .3s;
+  transition: left .5s, background-color .3s;
+  background-color: rgba(255, 255, 255, .1);
+  z-index: 100;
+}
+
+#sidebar:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+#sidebar.focused {
+  left: 0;
+}
+
+#icons {
+  margin-right: 22px;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  z-index: 10;
+}
+
+#icons div {
+  text-align: center;
+  margin: 30px 0;
+}
+
+#icons .fa {
+  color: #ccc;
+  font-size: 30px;
+}
+
+#sidebar.focused #icons {
+  opacity: 0;
+}
+
+#menu {
+  width: 100%;
+  height: 100%;
+  background-color: #222; /* red; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  box-sizing: border-box;
+  padding-top: 70px;
+}
+
+#sidebar.focused #menu {
+  opacity: 1;
+}
+
+#menu .item {
+  height: 70px;
+  line-height: 70px;
+  color: white;
+  font-size: 25px;
+  padding-left: 90px;
+  box-sizing: border-box;
+  cursor: default;
+  display: none;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  text-transform: uppercase;
+}
+
+#menu .item:hover,
+#menu .item-focus {
+  background-color: #ffe300; /* white; */
+  color: black !important;
+}
+
+#menu .item .fa {
+  width: 40px;
+}
+
+#sidebar.focused #menu .item {
+  display: block;
+}
+
+.mainbox {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 40px 40px 0 40px;
+}
+
+#search-box-placeholder {
+  width: 70%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #666;
+  box-sizing: border-box;
+  padding-left: 15px;
+  cursor: pointer;
+  font-size: 25px;
+  color: #aaa;
+}
+
+#search-box-placeholder:hover,
+.search-box-placeholder-focus {
+  color: black !important;
+  background-color: white !important;
+}
+
+#content {
+  height: 100%;
+  position: relative;
+}
+
+#content .content {
+  white-space: nowrap;
+  font-size: 0;
+  overflow: hidden;
+  padding: 50px;
+  margin: -50px;
+}
+
+#content h1 {
+  font-size: 30px;
+  height: 80px;
+  padding: 0;
+  margin: 0;
+  line-height: 80px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+#content .item {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  padding-bottom: 50px;
+  background-color: #666;
+  font-size: 1rem;
+  margin-right: 20px;
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#content .item-focus {
+  background-color: white;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  box-shadow: #ffe300 0 0 3px 5px;
+}
+
+#content .animate {
+  width: 25%;
+  padding-bottom: 0;
+  -webkit-transition: padding-bottom .3s ease;
+  transition: padding-bottom .3s ease;
+}
+
+#content .placeholder {
+  width: 25%;
+  padding-bottom: calc(30% + 80px);
+}
+
+.contentgroup {
+  width: 100%;
+  z-index: 2;
+  opacity: 1;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.contentgroup.fading-out {
+  opacity: 0;
+  display: none;
+}
+
+.mainbox {
+  .hz-list {
+    overflow: visible !important;
+
+    > span {
+      .item {
+        &:hover {
+          // background-color: white;// transform: scale(1.08);// transition: all .2s ease-in-out;// box-shadow: #ffe300 0 0 3px 5px;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 576px) {
@@ -10451,6 +10709,10 @@ table {
     padding: 8rem;
   }
 
+  .sm\:p-48 {
+    padding: 3rem;
+  }
+
   .sm\:p-60 {
     padding: 3.75rem;
   }
@@ -10615,6 +10877,16 @@ table {
   .sm\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .sm\:py-48 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .sm\:px-48 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .sm\:py-60 {
@@ -10895,6 +11167,22 @@ table {
 
   .sm\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .sm\:pt-48 {
+    padding-top: 3rem;
+  }
+
+  .sm\:pr-48 {
+    padding-right: 3rem;
+  }
+
+  .sm\:pb-48 {
+    padding-bottom: 3rem;
+  }
+
+  .sm\:pl-48 {
+    padding-left: 3rem;
   }
 
   .sm\:pt-60 {
@@ -16335,6 +16623,10 @@ table {
     padding: 8rem;
   }
 
+  .md\:p-48 {
+    padding: 3rem;
+  }
+
   .md\:p-60 {
     padding: 3.75rem;
   }
@@ -16499,6 +16791,16 @@ table {
   .md\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .md\:py-48 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .md\:px-48 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .md\:py-60 {
@@ -16779,6 +17081,22 @@ table {
 
   .md\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .md\:pt-48 {
+    padding-top: 3rem;
+  }
+
+  .md\:pr-48 {
+    padding-right: 3rem;
+  }
+
+  .md\:pb-48 {
+    padding-bottom: 3rem;
+  }
+
+  .md\:pl-48 {
+    padding-left: 3rem;
   }
 
   .md\:pt-60 {
@@ -22219,6 +22537,10 @@ table {
     padding: 8rem;
   }
 
+  .lg\:p-48 {
+    padding: 3rem;
+  }
+
   .lg\:p-60 {
     padding: 3.75rem;
   }
@@ -22383,6 +22705,16 @@ table {
   .lg\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .lg\:py-48 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .lg\:px-48 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .lg\:py-60 {
@@ -22663,6 +22995,22 @@ table {
 
   .lg\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .lg\:pt-48 {
+    padding-top: 3rem;
+  }
+
+  .lg\:pr-48 {
+    padding-right: 3rem;
+  }
+
+  .lg\:pb-48 {
+    padding-bottom: 3rem;
+  }
+
+  .lg\:pl-48 {
+    padding-left: 3rem;
   }
 
   .lg\:pt-60 {
@@ -28103,6 +28451,10 @@ table {
     padding: 8rem;
   }
 
+  .xl\:p-48 {
+    padding: 3rem;
+  }
+
   .xl\:p-60 {
     padding: 3.75rem;
   }
@@ -28267,6 +28619,16 @@ table {
   .xl\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .xl\:py-48 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .xl\:px-48 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .xl\:py-60 {
@@ -28547,6 +28909,22 @@ table {
 
   .xl\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .xl\:pt-48 {
+    padding-top: 3rem;
+  }
+
+  .xl\:pr-48 {
+    padding-right: 3rem;
+  }
+
+  .xl\:pb-48 {
+    padding-bottom: 3rem;
+  }
+
+  .xl\:pl-48 {
+    padding-left: 3rem;
   }
 
   .xl\:pt-60 {

@@ -15,7 +15,7 @@ class AppHeader extends Component {
 
   render () {
     return (
-      <header className="app-header w-full h-72 w-full bg-transparent flex flex-no-wrap items-center justify-center overflow-hidden">
+      <header className="app-header w-full h-72 w-full py-48 bg-transparent flex flex-no-wrap items-center justify-center overflow-hidden">
         <div className="app-logo-wrap flex-none">
           <AppLogo />
         </div>

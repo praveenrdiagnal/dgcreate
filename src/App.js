@@ -1,28 +1,52 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ReactTV from 'react-tv';
 
-class App extends Component {
+import Sidebar from './Sidebar.js'
+import List from './List.js'
+import Search from './Search.js'
+
+import Navigation, { VerticalList, HorizontalList } from 'react-key-navigation'
+
+export default class ReactTVApp extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      active: null,
+    }
+
+    this.lists = ["Featured", "Science Fiction", "Continue Watching", "Trending", "Most Popular"];
+  }
+
+  changeFocusTo(index) {
+    this.setState({active: index});
+  }
+
+  onBlurLists() {
+    this.setState({active: null});
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Navigation>
+        <div id="container">
+          <HorizontalList>
+            <Sidebar/>
+            <div class="mainbox">
+              <VerticalList navDefault>
+                <Search/>
+                <VerticalList id="content" onBlur={() => this.onBlurLists()}>
+                  {this.lists.map((list, i) =>
+                    <List key={i} title={list} onFocus={() => this.changeFocusTo(i)} visible={this.state.active !== null ? i >= this.state.active : true} />
+                  )}
+                </VerticalList>
+              </VerticalList>
+            </div>
+          </HorizontalList>
+        </div>
+      </Navigation>
     );
   }
 }
 
-export default App;
+// ReactTV.render(<ReactTVApp />, document.querySelector('#root'));
