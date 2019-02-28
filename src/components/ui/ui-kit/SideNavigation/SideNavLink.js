@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-class NavDrawerLink extends Component {
-  handleOnClick = url => {
-    console.log(url);    
-  }
-
+class SideNavLink extends Component {
   render () {
     const { title, onClick } = this.props;
 
@@ -18,16 +13,16 @@ class NavDrawerLink extends Component {
   }
 }
 
-NavDrawerLink.propTypes = {
+SideNavLink.propTypes = {
   /** Title to display as link */
   title: PropTypes.string.isRequired,
   /** Click handler function */
   onClick: PropTypes.func.isRequired
 };
 
-NavDrawerLink.defaultProps = {
+SideNavLink.defaultProps = {
   title: '',
   onClick: () => {}
 };
 
-export default NavDrawerLink;
+export default SideNavLink;

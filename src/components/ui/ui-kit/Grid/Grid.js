@@ -40,7 +40,7 @@ class Grid extends Component {
     if (movies) {
       return movies.map(movie => {
         return (
-          <GridItem title={movie.title} imageUrl={movie.imageUrl} />
+          <GridItem key={movie.id} title={movie.title} imageUrl={movie.imageUrl} />
         )
       })
     }

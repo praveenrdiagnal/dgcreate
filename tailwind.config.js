@@ -47,6 +47,7 @@ let colors = {
   'transparent': 'transparent',
 
   'dg-yellow' : '#FFE300',
+  'dg-navdrawer-bg' : '#222222',
 
   'black': '#22292f',
   'grey-darkest': '#3d4852',
@@ -505,6 +506,7 @@ module.exports = {
     '72' : '4.5rem',
     '292' : '18.25rem',
     '352' : '22rem',
+    '440' : '27.5rem',
     '1/2': '50%',
     '1/3': '33.33333%',
     '2/3': '66.66667%',
@@ -693,6 +695,7 @@ module.exports = {
     '24': '6rem',
     '32': '8rem',
     '60': '3.75rem',
+    '70' : '4.375rem',
     '72' : '4.5rem',
   },
 

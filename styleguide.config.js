@@ -31,9 +31,9 @@ module.exports = {
       components: 'src/components/ui/ui-kit/Grid/*.js'
     },
     {
-      name: 'NavDrawer',
-      content: 'src/components/ui/ui-kit/NavDrawer/NavDrawer.md',
-      components: 'src/components/ui/ui-kit/NavDrawer/*.js'
+      name: 'SideNavigation',
+      content: 'src/components/ui/ui-kit/SideNavigation/SideNavigation.md',
+      components: 'src/components/ui/ui-kit/SideNavigation/*.js'
     },
     // {
       // name: 'Details',

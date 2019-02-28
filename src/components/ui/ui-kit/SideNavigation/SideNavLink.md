@@ -6,7 +6,7 @@ const handleOnClick = () => {
 }
 
 <div className="bg-black p-6 flex flex-row">
-  <NavDrawerLink
+  <SideNavLink
     title="Link One"
     onClick={handleOnClick}
   />

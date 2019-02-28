@@ -1,4 +1,4 @@
-NavDrawer Link:
+SideNav:
 
 ```js
 const links = [
@@ -48,8 +48,7 @@ const links = [
     'url' : '/settings'
   }
 ];
-
 <div className="bg-black p-6 flex flex-row">
-  <NavDrawerLinkList links={links} />
+  <SideNav withHeader links={links} />
 </div>
 ```
